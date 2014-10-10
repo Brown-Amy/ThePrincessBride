@@ -5,6 +5,7 @@
  */
 package princessbride;
 
+import princessbride.model.Player;
 /**
  *
  * @author alexanderknudson
@@ -15,7 +16,13 @@ public class PrincessBride {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Player playerOne = new Player();
+        
+        playerOne.setPlayerName("Westley");
+        playerOne.setBestTime(7.68);        
+        
+        String playerInfo = playerOne.toString();
+        System.out.println(playerInfo);
     }
     
 }
