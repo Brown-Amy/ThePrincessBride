@@ -5,6 +5,7 @@
  */
 package princessbride;
 
+import princessbride.model.Actor;
 import princessbride.model.Player;
 /**
  *
@@ -18,11 +19,24 @@ public class PrincessBride {
     public static void main(String[] args) {
         Player playerOne = new Player();
         
-        playerOne.setPlayerName("Westley");
+        playerOne.setPlayerName("Jim");
         playerOne.setBestTime(7.68);        
         
         String playerInfo = playerOne.toString();
         System.out.println(playerInfo);
+        
+        //-------------------------------
+        
+        Actor actorOne = new Actor();
+        
+        actorOne.setActorName("Buttercup");
+        
+        String actorInfo = actorOne.toString();
+        System.out.println(actorInfo);
+        
+        //-------------------------------
+        
+                
     }
     
 }
