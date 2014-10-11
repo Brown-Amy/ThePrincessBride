@@ -20,7 +20,6 @@ public class ThePrincessBride {
         
         Game gameOne = new Game();
         
-        gameOne.setName("initial");
         gameOne.setBestTime(10.00);
         gameOne.setLastSave("today");
         gameOne.setTotalTime(5.00);
