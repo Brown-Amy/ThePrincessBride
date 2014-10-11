@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package theprincessbride.model;
+package princessbride.model;
 
 import java.io.Serializable;
+
 /**
  *
  * @author amybrown
@@ -43,8 +44,8 @@ public class Map implements Serializable {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 59 * hash + this.rowCount;
-        hash = 59 * hash + this.columnCount;
+        hash = 13 * hash + this.rowCount;
+        hash = 13 * hash + this.columnCount;
         return hash;
     }
 
@@ -65,8 +66,6 @@ public class Map implements Serializable {
         }
         return true;
     }
-    
-    
     
     
 }

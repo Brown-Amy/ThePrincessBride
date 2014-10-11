@@ -7,13 +7,17 @@ package princessbride;
 
 import princessbride.model.Actor;
 import princessbride.model.FireSwamp;
+import princessbride.model.Game;
 import princessbride.model.Item;
+import princessbride.model.Location;
 import princessbride.model.MadLib;
+import princessbride.model.Map;
 import princessbride.model.Maze;
 import princessbride.model.Phrases;
 import princessbride.model.Player;
 import princessbride.model.SwampLocation;
 import princessbride.model.Words;
+
 /**
  *
  * @author alexanderknudson
@@ -106,6 +110,38 @@ public class PrincessBride {
         System.out.println(swampLocationInfo);
         
         //-------------------------------------
+        Game gameOne = new Game();
+        gameOne.setLastSave("today");
+        gameOne.setBestTime(10.00);
+        gameOne.setTotalTime(15);
+        
+        String gameOneInfo = gameOne.toString();
+        System.out.println(gameOneInfo);
+        
+        //----------------------------------
+        
+        Map mapOne = new Map();
+        mapOne.setColumnCount(4);
+        mapOne.setRowCount(3);
+        
+        String mapOneInfo = mapOne.toString();
+        System.out.println(mapOneInfo);
+        
+        //-------------------------------------
+        
+        Location locationOne = new Location();
+        locationOne.setRow(2);
+        locationOne.setColumn(5);
+        locationOne.setBlocked("This site is currently blocked");
+        locationOne.setCompleted("congratulations this mission in complete");
+        locationOne.setVisited("you've been here");
+        
+        String locationOneInfo = locationOne.toString();
+        System.out.println(locationOneInfo);
+        
+        
+        
+        
         
     }
     
