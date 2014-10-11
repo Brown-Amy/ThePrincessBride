@@ -6,6 +6,7 @@
 package princessbride;
 
 import princessbride.model.Actor;
+import princessbride.model.Item;
 import princessbride.model.Player;
 /**
  *
@@ -36,7 +37,21 @@ public class PrincessBride {
         
         //-------------------------------
         
+        Item itemOne = new Item();
+        
+        itemOne.setType("rope");
+        itemOne.setDescription("a strong coil of rope");
+        itemOne.setSpecialAbility("Can be used to rescue someone in peril");
+        itemOne.setRequiredAmount(3);
+        itemOne.setActualAmount(2);
                 
+        String itemInfo = itemOne.toString();
+        System.out.println(itemInfo);
+        
+        //---------------------------------
+        
+        
+        
     }
     
 }
