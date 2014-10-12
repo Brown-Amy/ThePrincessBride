@@ -8,6 +8,7 @@ package princessbride;
 import princessbride.model.Actor;
 import princessbride.model.FireSwamp;
 import princessbride.model.Game;
+import princessbride.model.Inventory;
 import princessbride.model.Item;
 import princessbride.model.Location;
 import princessbride.model.MadLib;
@@ -15,6 +16,9 @@ import princessbride.model.Map;
 import princessbride.model.Maze;
 import princessbride.model.Phrases;
 import princessbride.model.Player;
+import princessbride.model.Rhyming;
+import princessbride.model.RhymingWord;
+import princessbride.model.RockPaperScissors;
 import princessbride.model.SwampLocation;
 import princessbride.model.Words;
 
@@ -139,6 +143,42 @@ public class PrincessBride {
         String locationOneInfo = locationOne.toString();
         System.out.println(locationOneInfo);
         
+        //--------------------------------------
+        
+        Inventory inventoryOne = new Inventory();
+        inventoryOne.setDescription(" you have no items");
+        
+        String inventoryOneInfo = inventoryOne.toString();
+        System.out.println(inventoryOneInfo);
+        
+        //-------------------------------------------
+        
+        Rhyming rhymingOne = new Rhyming();
+        rhymingOne.setDescription("find the rhyming word from the choices");
+        rhymingOne.setWord("wing");
+        
+        String rhymingOneInfo = rhymingOne.toString();
+        System.out.println(rhymingOneInfo);
+        
+        //----------------------------------------
+        
+        RhymingWord rhymingWordOne = new RhymingWord();
+        rhymingWordOne.setRhymePattern("ied");
+        
+        String rhymingWordOneInfo = rhymingWordOne.toString();
+        System.out.println(rhymingWordOneInfo);
+        
+        //----------------------------------------
+        
+        RockPaperScissors rockPaperScissorsOne = new RockPaperScissors();
+        rockPaperScissorsOne.setScore(1);
+        rockPaperScissorsOne.setScoreFezzik(1);
+        rockPaperScissorsOne.setScorePlayer(2);
+        rockPaperScissorsOne.setChoice(3);
+        rockPaperScissorsOne.setDescription("you may be strong but can you beat the giant in a game of Rock Paper Scissors?");
+        
+        String rockPaperScissorsOneInfo = rockPaperScissorsOne.toString();
+        System.out.println(rockPaperScissorsOneInfo);
         
         
         
